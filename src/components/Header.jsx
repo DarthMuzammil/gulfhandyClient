@@ -67,13 +67,7 @@ const Header = () => {
       </Text>
       <Stack spacing={4} direction='row' marginLeft={20} align='center'>
         <Button colorScheme='blue' size='md'>
-        <Link href="/AddService">Add Service</Link>
-        </Button>
-        <Button colorScheme='blue' size='md'>
           <Link href="/ViewService">View Services</Link>
-        </Button>
-        <Button colorScheme='blue' size='md'>
-          <Link href="/ViewCustomerRequest">View Customer Requests</Link>
         </Button>
       </Stack>
     </Box>
@@ -106,13 +100,7 @@ const Header = () => {
             <DrawerBody>
             <Stack spacing={4} direction='column' align='center'>
               <Button colorScheme='blue' size='lg'>
-                Add Service
-              </Button>
-              <Button colorScheme='blue' size='lg'>
                 View Services
-              </Button>
-              <Button colorScheme='blue' size='lg'>
-                View Customer Requests
               </Button>
             </Stack>
             </DrawerBody>

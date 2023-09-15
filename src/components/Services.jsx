@@ -7,7 +7,7 @@ import Service from "./Service";
 const Services = ({services}) => {
   return (
     services.map((service, index) => (
-        <Service key={index} title={service.title} ppu={service.pricePerUnit} unitType={service.unitType} description={service.description} />
+        <Service key={index} id={service._id} title={service.title} ppu={service.pricePerUnit} unitType={service.unitType} description={service.description} />
       ))
   );
 };
