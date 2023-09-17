@@ -1,5 +1,6 @@
 import React from "react";
 import Link from 'next/link'
+import { useRouter } from "next/router";
 import { Box, Text, Button, Stack, Hide, Show, Drawer,
   DrawerBody,
   DrawerHeader,
@@ -11,7 +12,12 @@ import { Box, Text, Button, Stack, Hide, Show, Drawer,
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const router = useRouter();
   const btnRef = React.useRef()
+
+  const handleLogOut = () => {
+    router.replace('/login').then()
+  }
   return (
     <>
         <Hide below="md">
@@ -72,9 +78,9 @@ const Header = () => {
             <DrawerBody>
             <Stack spacing={4} direction='column' align='center'>
               <Button colorScheme='blue' size='lg'>
-                View Services
+              <Link href="/ViewService">View Services</Link>
               </Button>
-              <Button colorScheme='blue' size='lg'>
+              <Button onClick={handleLogOut} colorScheme='blue' size='lg'>
                 Logout
         </Button>
         <Button colorScheme='blue' size='lg'>
