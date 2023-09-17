@@ -39,8 +39,8 @@ function SignIn ({setAuthState}){
     <Flex className="bg-[#313d44]" height={'100vh'} justify="center" align="center">
     <Stack spacing={3}>
     <Image src={logo} width={300} height={300} alt='Dan Abramov' />
-      <Input onChange={handleInputChange} value={username} placeholder='username' size='md' />
-      <Input onChange={handleInputChange} value={password} placeholder='password' size='md' />
+      <Input color='#b6ccd8' onChange={handleInputChange} value={username} placeholder='username' size='md' />
+      <Input color='#b6ccd8' onChange={handleInputChange} value={password} placeholder='password' size='md' />
       <Button onClick={handleSignIn}>Sign In</Button>
       <Button onClick={handleRegister}>Register</Button>
     </Stack>
@@ -64,11 +64,11 @@ function Register ({setAuthState}){
     <Flex  className="bg-[#313d44]" height={'100vh'} justify="center" align="center">
     <Stack spacing={3}>
     <Image src={logo} width={300} height={300} alt='Dan Abramov' />
-      <Input placeholder='username' size='md' />
-      <Input placeholder='password' size='md' />
-      <Input placeholder='email' size='md' />
-      <Input placeholder='mobile' size='md' />
-      <Button>Sign Up</Button>
+      <Input color='#b6ccd8' placeholder='username' size='md' />
+      <Input color='#b6ccd8' placeholder='password' size='md' />
+      <Input color='#b6ccd8' placeholder='email' size='md' />
+      <Input color='#b6ccd8' placeholder='mobile' size='md' />
+      <Button onClick={handleSignUp}>Sign Up</Button>
       <Button onClick={handleBack}>Back</Button>
     </Stack>
   </Flex>
