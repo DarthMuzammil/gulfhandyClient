@@ -7,47 +7,7 @@ import { Box, Text, Button, Stack, Hide, Show, Drawer,
   DrawerContent,
   DrawerCloseButton, useDisclosure } from "@chakra-ui/react";
 
-  function DrawerExample() {
-    const { isOpen, onOpen, onClose } = useDisclosure()
-    const btnRef = React.useRef()
-  
-    return (
-      <>
-        <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
-          Open
-        </Button>
-        <Drawer
-          isOpen={isOpen}
-          placement='right'
-          onClose={onClose}
-          finalFocusRef={btnRef}
-        >
-          <DrawerOverlay />
-          <DrawerContent>
-            <DrawerCloseButton />
-            <DrawerHeader>Create your account</DrawerHeader>
-  
-            <DrawerBody>
-            <Stack spacing={4} direction='column' marginLeft={20} align='center'>
-        <Button colorScheme='blue' size='md'>
-          Button
-        </Button>
-        <Button colorScheme='blue' size='md'>
-          Button
-        </Button>
-        <Button colorScheme='blue' size='md'>
-          Button
-        </Button>
-        <Button colorScheme='blue' size='md'>
-          Button
-        </Button>
-      </Stack>
-            </DrawerBody>
-          </DrawerContent>
-        </Drawer>
-      </>
-    )
-  }
+
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -68,6 +28,18 @@ const Header = () => {
       <Stack spacing={4} direction='row' marginLeft={20} align='center'>
         <Button colorScheme='blue' size='md'>
           <Link href="/ViewService">View Services</Link>
+        </Button>
+        <Button colorScheme='blue' size='md'>
+                Logout
+        </Button>
+        <Button colorScheme='blue' size='md'>
+                Manage Account
+        </Button>
+        <Button colorScheme='blue' size='md'>
+                Order History
+        </Button>
+        <Button colorScheme='blue' size='md'>
+                Contact Us
         </Button>
       </Stack>
     </Box>
@@ -102,6 +74,18 @@ const Header = () => {
               <Button colorScheme='blue' size='lg'>
                 View Services
               </Button>
+              <Button colorScheme='blue' size='lg'>
+                Logout
+        </Button>
+        <Button colorScheme='blue' size='lg'>
+                Manage Account
+        </Button>
+        <Button colorScheme='blue' size='lg'>
+                Order History
+        </Button>
+        <Button colorScheme='blue' size='lg'>
+                Contact Us
+        </Button>
             </Stack>
             </DrawerBody>
           </DrawerContent>

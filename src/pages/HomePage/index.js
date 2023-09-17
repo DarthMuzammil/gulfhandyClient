@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { Container, Grid } from '@chakra-ui/react'
-import { getData } from '../api'
-import Header from '../components/Header'
-import Services from '../components/Services';
+import { getData } from '../../api'
+import Header from '../../components/Header'
+import Services from '../../components/Services'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 
